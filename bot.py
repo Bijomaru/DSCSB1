@@ -1,4 +1,6 @@
 import discord
+
+from utilities import utilities
 from discord.ext import commands
 
 class MyClient(discord.Client):
@@ -17,4 +19,4 @@ class MyClient(discord.Client):
             await message.reply('Hello!', mention_author=True)
 
 client = MyClient()
-client.run('ODE3MDc4NTQ5NTA0NDU4Nzc0.YEERsg.7nCASsxHXwIKqpWl55-QQBlgAs8')
+client.run(utilities.token)
